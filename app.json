@@ -1,12 +1,12 @@
 {
-  "name": "Flask Heroku Sample",
-  "description": "A sample Flask app on Heroku",
+  "name": "flask-test-2",
+  "description": "flask-test-2",
   "keywords": [
     "flask",
     "python",
     "sample"
   ],
-  "repository": "https://github.com/yefim/flask-heroku-sample",
+  "repository": "https://github.com/el3reef/flask-test-2",
   "scripts": {
     "postdeploy": "python -c 'from app import db; db.create_all()'"
   },
