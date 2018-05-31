@@ -3,6 +3,10 @@ from datetime import datetime
 import keras
 import numpy as np
 import pandas as pd
+from keras.models import Sequential
+from keras.layers.core import Dense, Dropout,Activation
+from keras.optimizers import SGD
+from sklearn.model_selection import train_test_split
 
 app = Flask(__name__)
 
