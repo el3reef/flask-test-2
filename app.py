@@ -2,14 +2,14 @@ from flask import Flask
 from datetime import datetime
 import keras
 
-x = np.array([[0,0],[0,1],[1,0],[1,1]])
-y = np.array([[0],[1],[1],[0]])
-
 app = Flask(__name__)
 
 @app.route('/')
 def homepage():
     the_time = datetime.now().strftime("%A, %d %b %Y %l:%M %p")
+
+    x = np.array([[0,0],[0,1],[1,0],[1,1]])
+    y = np.array([[0],[1],[1],[0]])
 
     return """
     <h1>Hello heroku</h1>
