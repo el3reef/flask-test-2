@@ -1,5 +1,7 @@
 from flask import Flask
 from datetime import datetime
+from keras.models import Sequential
+
 app = Flask(__name__)
 
 @app.route('/')
