@@ -19,24 +19,7 @@ def homepage():
 
 	x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.10)
 
-
-	model = Sequential()
-	model.add(Dense(2,input_dim=2,activation='relu'))
-	model.add(Dense(16,activation='relu'))
-	model.add(Dense(1,activation='sigmoid'))
-
-
-	sgd = SGD(lr=0.005)
-	model.compile(loss='binary_crossentropy',optimizer=sgd,metrics=['accuracy'])
-
-	model.summary()
-
-	model.fit(x_train,y_train,batch_size=1,nb_epoch=10)
-
-
-	#print(model.predict_proba(x))
-
-	score = model.evaluate(x_test,y_test, verbose=0)
+ 
 
 
     return """
