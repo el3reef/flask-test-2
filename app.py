@@ -16,8 +16,7 @@ def homepage():
 
     x = np.array([[0,0],[0,1],[1,0],[1,1]])
     y = np.array([[0],[1],[1],[0]])
-
-	x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.10)
+    x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.10)
 
  
 
