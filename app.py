@@ -35,9 +35,10 @@ def homepage():
     #print(model.predict_proba(x))
     
     score = model.evaluate(x_test,y_test, verbose=0) 
+    
+    xxx = "hoo"
 
-
-    return "hi"
+    return xxx
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
