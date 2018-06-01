@@ -37,7 +37,7 @@ def homepage():
     score = model.evaluate(x_test,y_test, verbose=0) 
 
 
-    return score
+    return "hi"
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
