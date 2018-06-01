@@ -38,7 +38,7 @@ def homepage():
     print(score)
     xxx = "hoo"
 
-    return xxx
+    return x
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
