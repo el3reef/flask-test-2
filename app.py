@@ -38,7 +38,7 @@ def homepage():
     print(score)
     xxx = "hoo"
 
-    return x
+    return model.predict_proba(x)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
